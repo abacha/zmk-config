@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: KeebMaker
+      url-base: https://github.com/KeebMaker
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3.0
+      import: app/west.yml
+    - name: zmk-nice-oled
+      remote: KeebMaker
+      revision: 32714943679a4b8a7de3825dcb94fe571f08094d
+  self:
+    path: config
