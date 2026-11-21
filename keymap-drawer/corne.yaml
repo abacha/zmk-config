@@ -50,42 +50,42 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - {t: ▽, type: trans}
+  - F13
   - HOME
   - UP
   - END
   - Sft+[
-  - {t: ▽, type: trans}
+  - F14
   - '&sys_reset'
   - LCTRL
   - LSHFT
   - LALT
   - LGUI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F15
+  - F16
   - LEFT
   - DOWN
   - RIGHT
   - Sft+]
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F17
+  - F18
   - RGB TOG
   - RGB EFF
   - RGB BRD
   - RGB BRI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F19
+  - F20
   - (
   - )
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F21
+  - F22
+  - F23
+  - {t: F24, type: held}
+  - F13
+  - F14
+  - F15
   RAISE:
   - Alt+1
   - '`'
@@ -93,7 +93,7 @@ layers:
   - '|'
   - '&'
   - '='
-  - {t: ▽, type: trans}
+  - F16
   - '7'
   - '8'
   - '9'
@@ -105,7 +105,7 @@ layers:
   - '#'
   - {t: $, type: held}
   - Sft+.
-  - {t: ▽, type: trans}
+  - F17
   - '4'
   - '5'
   - '6'
@@ -117,15 +117,15 @@ layers:
   - Sft+-
   - Sft+=
   - '-'
-  - {t: ▽, type: trans}
+  - F18
   - '1'
   - '2'
   - '3'
   - F5
   - F6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F19
+  - F20
+  - F21
   - RET
   - '0'
-  - {t: ▽, type: trans}
+  - F22
