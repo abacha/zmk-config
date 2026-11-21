@@ -1,0 +1,131 @@
+layout: {zmk_keyboard: corne}
+layers:
+  NORMAL:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - {t: TAB, h: LSHFT}
+  - A
+  - S
+  - D
+  - {t: F, h: RAISE}
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: RSHFT}
+  - LALT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - \
+  - LWIN
+  - {t: TAB, h: LCTRL}
+  - {t: RET, h: LOWER}
+  - {t: SPACE, h: RAISE}
+  - {t: DEL, h: RCTRL}
+  - RWIN
+  LOWER:
+  - '&studio_unlock'
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: ▽, type: trans}
+  - HOME
+  - UP
+  - END
+  - Sft+[
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - LCTRL
+  - LSHFT
+  - LALT
+  - LGUI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - Sft+]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - RGB EFF
+  - RGB BRD
+  - RGB BRI
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - (
+  - )
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RAISE:
+  - {t: ▽, type: trans}
+  - '`'
+  - '%'
+  - '|'
+  - '&'
+  - '='
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - F1
+  - F2
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - {t: $, type: held}
+  - Sft+.
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - F3
+  - F4
+  - {t: ▽, type: trans}
+  - ^
+  - '*'
+  - Sft+-
+  - Sft+=
+  - '-'
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RET
+  - '0'
+  - {t: ▽, type: trans}

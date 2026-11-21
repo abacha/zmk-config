@@ -1,0 +1,4 @@
+draw_config:
+  key_w: 60
+parse_config:
+  preprocess: true
