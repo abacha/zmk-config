@@ -87,7 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   RAISE:
-  - {t: ▽, type: trans}
+  - Alt+1
   - '`'
   - '%'
   - '|'
@@ -99,7 +99,7 @@ layers:
   - '9'
   - F1
   - F2
-  - {t: ▽, type: trans}
+  - Alt+2
   - '!'
   - '@'
   - '#'
@@ -111,7 +111,7 @@ layers:
   - '6'
   - F3
   - F4
-  - {t: ▽, type: trans}
+  - Alt+3
   - ^
   - '*'
   - Sft+-
