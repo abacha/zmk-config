@@ -2,6 +2,7 @@ draw_config:
   key_w: 60
   svg_extra_style: |
     text.key { font-size: 13px; }
+    rect.held, rect.combo.held { fill: #f6f8fa; }
 parse_config:
   preprocess: true
   zmk_keycode_map:
@@ -47,3 +48,7 @@ parse_config:
   raw_binding_map:
     "&studio_unlock": Studio
     "&sys_reset": Reset
+    "&bt BT_SEL 0": BT 0
+    "&bt BT_SEL 1": BT 1
+    "&bt BT_SEL 2": BT 2
+    "&bt BT_SEL 3": BT 3
