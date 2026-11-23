@@ -3,11 +3,11 @@ layout:
 layers:
   RAISE:
   - Alt+1
-  - GRAVE
-  - PRCNT
-  - PIPE
-  - AMPS
-  - EQUAL
+  - '`'
+  - '%'
+  - '|'
+  - '&'
+  - '='
   - '7'
   - '8'
   - '9'
@@ -15,10 +15,10 @@ layers:
   - F2
   - F3
   - Alt+2
-  - EXCL
-  - AT
-  - HASH
-  - t: DLLR
+  - '!'
+  - '@'
+  - '#'
+  - t: $
     type: held
   - '>'
   - '4'
@@ -28,11 +28,11 @@ layers:
   - F5
   - F6
   - Alt+3
-  - CARET
-  - ASTRK
+  - ^
+  - '*'
   - _
   - +
-  - MINUS
+  - '-'
   - '1'
   - '2'
   - '3'
@@ -70,8 +70,8 @@ layers:
   - J
   - K
   - L
-  - SEMI
-  - t: SQT
+  - ;
+  - t: ''''
     h: RSHFT
   - LALT
   - Z
@@ -81,10 +81,10 @@ layers:
   - B
   - N
   - M
-  - COMMA
-  - DOT
-  - FSLH
-  - BSLH
+  - ','
+  - .
+  - /
+  - \
   - LWIN
   - t: TAB
     h: LCTRL
@@ -131,10 +131,10 @@ layers:
   - RGB BRI
   - ▽
   - ▽
-  - LPAR
-  - RPAR
-  - LBKT
-  - RBKT
+  - (
+  - )
+  - '['
+  - ']'
   - ▽
   - ▽
   - ▽
