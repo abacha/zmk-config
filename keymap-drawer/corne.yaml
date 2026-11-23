@@ -1,5 +1,50 @@
-layout: {zmk_keyboard: corne}
+layout:
+  zmk_keyboard: corne
 layers:
+  RAISE:
+  - Alt+1
+  - '`'
+  - '%'
+  - '|'
+  - '&'
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - F1
+  - F2
+  - F3
+  - Alt+2
+  - '!'
+  - '@'
+  - '#'
+  - t: $
+    type: held
+  - Sft+.
+  - '4'
+  - '5'
+  - '6'
+  - F4
+  - F5
+  - F6
+  - Alt+3
+  - ^
+  - '*'
+  - Sft+-
+  - Sft+=
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F20
+  - RET
+  - '0'
+  - F12
   NORMAL:
   - ESC
   - Q
@@ -13,18 +58,21 @@ layers:
   - O
   - P
   - BSPC
-  - {t: TAB, h: LSHFT}
+  - t: TAB
+    h: LSHFT
   - A
   - S
   - D
-  - {t: F, h: RAISE}
+  - t: F
+    h: RAISE
   - G
   - H
   - J
   - K
   - L
   - ;
-  - {t: '''', h: RSHFT}
+  - t: ''''
+    h: RSHFT
   - LALT
   - Z
   - X
@@ -38,18 +86,26 @@ layers:
   - /
   - \
   - LWIN
-  - {t: TAB, h: LCTRL}
-  - {t: RET, h: LOWER}
-  - {t: SPACE, h: RAISE}
-  - {t: DEL, h: RCTRL}
+  - t: TAB
+    h: LCTRL
+  - t: RET
+    h: LOWER
+  - t: SPACE
+    h: RAISE
+  - t: DEL
+    h: RCTRL
   - RWIN
   LOWER:
   - '&studio_unlock'
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - t: BT
+    h: '0'
+  - t: BT
+    h: '1'
+  - t: BT
+    h: '2'
+  - t: BT
+    h: '3'
   - F13
   - HOME
   - UP
@@ -82,50 +138,8 @@ layers:
   - F21
   - F22
   - F23
-  - {t: F24, type: held}
+  - t: F24
+    type: held
   - F13
   - F14
   - F15
-  RAISE:
-  - Alt+1
-  - '`'
-  - '%'
-  - '|'
-  - '&'
-  - '='
-  - '7'
-  - '8'
-  - '9'
-  - F1
-  - F2
-  - F3
-  - Alt+2
-  - '!'
-  - '@'
-  - '#'
-  - {t: $, type: held}
-  - Sft+.
-  - '4'
-  - '5'
-  - '6'
-  - F4
-  - F5
-  - F6
-  - Alt+3
-  - ^
-  - '*'
-  - Sft+-
-  - Sft+=
-  - '-'
-  - '1'
-  - '2'
-  - '3'
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F20
-  - RET
-  - '0'
-  - F12
