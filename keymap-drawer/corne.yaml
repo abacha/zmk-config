@@ -3,11 +3,11 @@ layout:
 layers:
   RAISE:
   - Alt+1
-  - '`'
-  - '%'
-  - '|'
-  - '&'
-  - '='
+  - GRAVE
+  - PRCNT
+  - PIPE
+  - AMPS
+  - EQUAL
   - '7'
   - '8'
   - '9'
@@ -15,12 +15,12 @@ layers:
   - F2
   - F3
   - Alt+2
-  - '!'
-  - '@'
-  - '#'
-  - t: $
+  - EXCL
+  - AT
+  - HASH
+  - t: DLLR
     type: held
-  - Sft+.
+  - '>'
   - '4'
   - '5'
   - '6'
@@ -28,11 +28,11 @@ layers:
   - F5
   - F6
   - Alt+3
-  - ^
-  - '*'
-  - Sft+-
-  - Sft+=
-  - '-'
+  - CARET
+  - ASTRK
+  - _
+  - +
+  - MINUS
   - '1'
   - '2'
   - '3'
@@ -41,7 +41,7 @@ layers:
   - F9
   - F10
   - F11
-  - F20
+  - ▽
   - RET
   - '0'
   - F12
@@ -70,8 +70,8 @@ layers:
   - J
   - K
   - L
-  - ;
-  - t: ''''
+  - SEMI
+  - t: SQT
     h: RSHFT
   - LALT
   - Z
@@ -81,10 +81,10 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
-  - /
-  - \
+  - COMMA
+  - DOT
+  - FSLH
+  - BSLH
   - LWIN
   - t: TAB
     h: LCTRL
@@ -96,7 +96,7 @@ layers:
     h: RCTRL
   - RWIN
   LOWER:
-  - '&studio_unlock'
+  - Studio
   - BT CLR
   - t: BT
     h: '0'
@@ -106,40 +106,40 @@ layers:
     h: '2'
   - t: BT
     h: '3'
-  - F13
+  - ▽
   - HOME
   - UP
   - END
-  - Sft+[
-  - F14
-  - '&sys_reset'
+  - '{'
+  - ▽
+  - Reset
   - LCTRL
   - LSHFT
   - LALT
   - LGUI
-  - F15
-  - F16
+  - ▽
+  - ▽
   - LEFT
   - DOWN
   - RIGHT
-  - Sft+]
-  - F17
-  - F18
+  - '}'
+  - ▽
+  - ▽
   - RGB TOG
   - RGB EFF
   - RGB BRD
   - RGB BRI
-  - F19
-  - F20
-  - (
-  - )
-  - '['
-  - ']'
-  - F21
-  - F22
-  - F23
-  - t: F24
+  - ▽
+  - ▽
+  - LPAR
+  - RPAR
+  - LBKT
+  - RBKT
+  - ▽
+  - ▽
+  - ▽
+  - t: ▽
     type: held
-  - F13
-  - F14
-  - F15
+  - ▽
+  - ▽
+  - ▽
