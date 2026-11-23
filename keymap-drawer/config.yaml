@@ -1,4 +1,27 @@
 draw_config:
   key_w: 60
+  svg_extra_style: |
+    text.key { font-size: 13px; }
 parse_config:
   preprocess: true
+  zmk_keycode_map:
+    LS(LBKT): "{"
+    LS(RBKT): "}"
+    LS(DOT): ">"
+    LS(MINUS): _
+    LS(EQUAL): "+"
+    F13: "▽"
+    F14: "▽"
+    F15: "▽"
+    F16: "▽"
+    F17: "▽"
+    F18: "▽"
+    F19: "▽"
+    F20: "▽"
+    F21: "▽"
+    F22: "▽"
+    F23: "▽"
+    F24: "▽"
+  raw_binding_map:
+    "&studio_unlock": Studio
+    "&sys_reset": Reset
