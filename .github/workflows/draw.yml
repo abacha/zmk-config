@@ -6,14 +6,63 @@ on:
     paths:
       - config/*.keymap
       - keymap-drawer/config.yaml
+      - .github/workflows/draw.yml
+
+permissions:
+  contents: write
+
+env:
+  KEYBOARD: corne
+  OUTPUT_FOLDER: keymap-drawer
+  LAYER_ORDER: "RAISE NORMAL LOWER"
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    permissions:
-      contents: write
-    with:
-      keymap_patterns: config/corne.keymap
-      config_path: keymap-drawer/config.yaml
-      output_folder: keymap-drawer
-      json_path: ""
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install tooling
+        run: |
+          pipx install keymap-drawer
+          pipx install west
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+
+      - name: Fetch west modules
+        run: |
+          west init -l config
+          west config --local manifest.project-filter " -zmk,-zephyr"
+          west update --fetch-opt=--filter=tree:0
+
+      - name: Parse keymap
+        run: |
+          keymap -c keymap-drawer/config.yaml parse -z config/$KEYBOARD.keymap > /tmp/$KEYBOARD.yaml
+          mv /tmp/$KEYBOARD.yaml $OUTPUT_FOLDER/$KEYBOARD.yaml
+
+      - name: Reorder layers
+        run: |
+          "$(pipx environment --value PIPX_LOCAL_VENVS)/keymap-drawer/bin/python" - <<'EOF'
+          import os, yaml
+          path = os.path.join(os.environ["OUTPUT_FOLDER"], os.environ["KEYBOARD"] + ".yaml")
+          order = os.environ["LAYER_ORDER"].split()
+          data = yaml.safe_load(open(path))
+          missing = set(data["layers"]) ^ set(order)
+          if missing:
+              raise SystemExit(f"LAYER_ORDER does not match parsed layers: {sorted(missing)}")
+          data["layers"] = {name: data["layers"][name] for name in order}
+          yaml.safe_dump(data, open(path, "w"), sort_keys=False, allow_unicode=True)
+          EOF
+
+      - name: Draw SVG and PNG
+        run: |
+          keymap -c keymap-drawer/config.yaml draw $OUTPUT_FOLDER/$KEYBOARD.yaml > /tmp/$KEYBOARD.svg
+          mv /tmp/$KEYBOARD.svg $OUTPUT_FOLDER/$KEYBOARD.svg
+          rsvg-convert --background-color white --zoom 2 $OUTPUT_FOLDER/$KEYBOARD.svg -o $OUTPUT_FOLDER/$KEYBOARD.png
+
+      - name: Commit drawings
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add $OUTPUT_FOLDER/$KEYBOARD.yaml $OUTPUT_FOLDER/$KEYBOARD.svg $OUTPUT_FOLDER/$KEYBOARD.png
+          git diff --cached --quiet || { git commit -m "keymap-drawer render" && git push; }
