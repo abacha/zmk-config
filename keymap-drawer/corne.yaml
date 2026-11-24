@@ -39,9 +39,12 @@ layers:
   - F7
   - F8
   - F9
-  - F10
-  - F11
-  - ▽
+  - t: F10
+    h: LEFT WIN
+  - t: F11
+    h: LCTRL
+  - t: F12
+    h: LEFT ALT
   - RET
   - '0'
   - F12
@@ -132,9 +135,9 @@ layers:
   - '['
   - ']'
   - SCROLLLOCK
-  - ▽
-  - ▽
-  - t: ▽
+  - LEFT WIN
+  - LCTRL
+  - t: LEFT ALT
     type: held
   - ▽
   - ▽
