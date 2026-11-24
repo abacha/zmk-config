@@ -97,29 +97,29 @@ layers:
   - RWIN
   LOWER:
   - Studio
-  - BT CLR
+  - ▽
   - BT 0
   - BT 1
-  - BT 2
-  - BT 3
+  - MUTE
+  - PLAY PAUSE
   - ▽
   - HOME
   - UP
   - END
   - '{'
-  - ▽
+  - PRINTSCREEN
   - Reset
   - LCTRL
   - LSHFT
   - LALT
-  - LGUI
-  - ▽
+  - PREV
+  - NEXT
   - ▽
   - LEFT
   - DOWN
   - RIGHT
   - '}'
-  - ▽
+  - PAUSE BREAK
   - ▽
   - RGB TOG
   - RGB EFF
@@ -131,7 +131,7 @@ layers:
   - )
   - '['
   - ']'
-  - ▽
+  - SCROLLLOCK
   - ▽
   - ▽
   - t: ▽
