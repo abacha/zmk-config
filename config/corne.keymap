@@ -30,10 +30,10 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&studio_unlock  &kp F16          &bt BT_SEL 0     &bt BT_SEL 1     &kp C_MUTE       &kp C_PLAY_PAUSE    &kp F13  &kp HOME  &kp UP    &kp END    &kp LS(LBKT)  &kp PRINTSCREEN
-&sys_reset      &kp LCTRL        &kp LSHFT        &kp LALT         &kp C_PREVIOUS   &kp C_NEXT          &kp F16  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(RBKT)  &kp PAUSE_BREAK
-&kp F18         &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F19             &kp F20  &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT      &kp SCROLLLOCK
-                                                  &kp LEFT_WIN     &kp LCTRL        &kp LEFT_ALT        &kp F13  &kp F14   &kp F15
+&kp F21       &kp F21          &bt BT_SEL 0     &bt BT_SEL 1     &kp C_MUTE       &kp C_PLAY_PAUSE    &kp F21  &kp HOME  &kp UP    &kp END    &kp LS(LBKT)  &kp PRINTSCREEN
+&sys_reset    &kp LCTRL        &kp LSHFT        &kp LALT         &kp C_PREVIOUS   &kp C_NEXT          &kp F21  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LS(RBKT)  &kp PAUSE_BREAK
+&kp LEFT_ALT  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F19             &kp F21  &kp LPAR  &kp RPAR  &kp LBKT   &kp RBKT      &kp SCROLLLOCK
+                                                &kp LEFT_WIN     &kp LCTRL        &kp F20             &kp F21  &kp F21   &kp F21
             >;
         };
 
@@ -43,7 +43,7 @@
 &kp LA(NUMBER_1)  &kp GRAVE  &kp PRCNT  &kp PIPE          &kp AMPS       &kp EQUAL           &kp NUMBER_7  &kp N8  &kp N9        &kp F1  &kp F2  &kp F3
 &kp LA(N2)        &kp EXCL   &kp AT     &kp HASH          &kp DLLR       &kp LS(DOT)         &kp N4        &kp N5  &kp NUMBER_6  &kp F4  &kp F5  &kp F6
 &kp LA(NUMBER_3)  &kp CARET  &kp ASTRK  &kp LS(MINUS)     &kp LS(EQUAL)  &kp MINUS           &kp N1        &kp N2  &kp N3        &kp F7  &kp F8  &kp F9
-                                        &mt LEFT_WIN F10  &mt LCTRL F11  &mt LEFT_ALT F12    &kp RET       &kp N0  &kp F12
+                                        &mt LEFT_WIN F10  &mt LCTRL F11  &mt LEFT_ALT F12    &kp F20       &kp N0  &kp F12
             >;
         };
 
