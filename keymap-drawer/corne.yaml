@@ -45,7 +45,7 @@ layers:
     h: LCTRL
   - t: F12
     h: LEFT ALT
-  - RET
+  - ▽
   - '0'
   - F12
   NORMAL:
@@ -99,7 +99,7 @@ layers:
     h: RCTRL
   - RWIN
   LOWER:
-  - Studio
+  - ▽
   - ▽
   - BT 0
   - BT 1
@@ -123,7 +123,7 @@ layers:
   - RIGHT
   - '}'
   - PAUSE BREAK
-  - ▽
+  - LEFT ALT
   - RGB TOG
   - RGB EFF
   - RGB BRD
@@ -137,7 +137,7 @@ layers:
   - SCROLLLOCK
   - LEFT WIN
   - LCTRL
-  - t: LEFT ALT
+  - t: ▽
     type: held
   - ▽
   - ▽
