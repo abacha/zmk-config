@@ -42,9 +42,9 @@ layers:
   - t: F10
     h: LEFT WIN
   - t: F11
-    h: LCTRL
-  - t: F12
     h: LEFT ALT
+  - t: F12
+    h: LCTRL
   - ▽
   - '0'
   - F12
@@ -76,7 +76,7 @@ layers:
   - ;
   - t: ''''
     h: RSHFT
-  - LALT
+  - LCTRL
   - Z
   - X
   - C
@@ -90,7 +90,7 @@ layers:
   - \
   - LWIN
   - t: TAB
-    h: LCTRL
+    h: LEFT ALT
   - t: RET
     h: LOWER
   - t: SPACE
@@ -123,7 +123,7 @@ layers:
   - RIGHT
   - '}'
   - PAUSE BREAK
-  - LEFT ALT
+  - LCTRL
   - RGB TOG
   - RGB EFF
   - RGB BRD
@@ -136,7 +136,7 @@ layers:
   - ']'
   - SCROLLLOCK
   - LEFT WIN
-  - LCTRL
+  - LEFT ALT
   - t: ▽
     type: held
   - ▽
